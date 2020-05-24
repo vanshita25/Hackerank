@@ -1,0 +1,55 @@
+You are given a string S .
+Your task is to find out if the string  contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
+Input Format:
+A single line containing a string S .
+Output Format:
+1. In the first line, print True if S has any alphanumeric characters. Otherwise, print False.
+2. In the second line, print True if S has any alphabetical characters. Otherwise, print False.
+3. In the third line, print True if S has any digits. Otherwise, print False.
+4. In the fourth line, print True if S has any lowercase characters. Otherwise, print False.
+5. In the fifth line, print True if S has any uppercase characters. Otherwise, print False.
+
+s = input()
+l=len(s)
+c=0
+p=0
+m=0
+y=0
+z=0
+for i in range(0,l):
+    if(s[i].isalnum()):
+        c=c+1
+    if(s[i].isalpha()):
+        p=p+1
+    if(s[i].isdigit()):
+        m=m+1
+    if(s[i].islower()):
+        y=y+1
+    if(s[i].isupper()):
+        z=z+1
+if(c>=1):
+    print("True")
+else:
+    print("False")
+if(p>=1):
+    print("True")
+else:
+    print("False")
+if(m>=1):
+    print("True")
+else:
+    print("False")
+if(y>=1):
+    print("True")
+else:
+    print("False")
+if(z>=1):
+    print("True")
+else:
+    print("False")
+
+
+
+
+
+
